@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'config';
+@import 'libs';
+@import 'keyframes';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $default-font, Arial, Helvetica, sans-serif;
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import 'media';
