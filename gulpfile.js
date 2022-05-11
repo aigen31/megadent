@@ -91,7 +91,7 @@ async function cleandist() {
 
 function buildcopy() {
   return src([
-    'src/*.css', 'src/assets/js/**/*.js', 'src/assets/img/dist/**/*', 'src/**/*.html', 'src/assets/fonts/**/*'
+    'src/*.css', 'src/assets/js/**/*.js', 'src/assets/img/dist/**/*', 'src/**/*.html', 'src/assets/fonts/**/*', 'src/assets/libs/**/*'
   ], { base: 'src' })
     .pipe(dest('dist'))
 }
