@@ -1,10 +1,10 @@
 @import "mixins/font-face";
 
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-Regular", 400, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-Light", 300, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-ExtraLight", 200, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-Medium", 500, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-SemiBold", 600, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-Bold", 700, normal);
-@include font-face("Manrope", "../assets/fonts/Manrope/Manrope-ExtraBold", 800, normal);
-@include font-face("CodecPro", "../assets/fonts/CodecPro/CodecPro-Heavy", 900, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-Regular", 400, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-Light", 300, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-ExtraLight", 200, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-Medium", 500, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-SemiBold", 600, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-Bold", 700, normal);
+@include font-face("Manrope", "assets/fonts/Manrope/Manrope-ExtraBold", 800, normal);
+@include font-face("CodecPro", "assets/fonts/CodecPro/CodecPro-Heavy", 900, normal);
