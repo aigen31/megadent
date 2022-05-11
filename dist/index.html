@@ -5,17 +5,924 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/libs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Header</h1>
+        <svg style="display: none;" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="specialist-arrow">
+    <path
+      d="M0.137231 6.63808C0.135307 6.46781 0.163688 6.29883 0.220746 6.14085C0.277805 5.98286 0.362417 5.83896 0.469733 5.71741L5.10161 0.513762C5.20957 0.392467 5.33804 0.29599 5.47967 0.229839C5.62129 0.163688 5.77331 0.129158 5.92704 0.128222C6.08077 0.127286 6.23319 0.159962 6.37562 0.224383C6.51804 0.288805 6.64767 0.38371 6.75711 0.503681C6.86654 0.623652 6.95364 0.76634 7.01343 0.923597C7.07322 1.08085 7.10453 1.2496 7.10557 1.4202C7.10661 1.5908 7.07736 1.75992 7.01949 1.91789C6.96162 2.07586 6.87626 2.2196 6.7683 2.3409L2.93526 6.62104L6.66866 10.868C6.78863 10.9863 6.88536 11.1308 6.95278 11.2924C7.02021 11.454 7.05688 11.6292 7.0605 11.8072C7.06413 11.9852 7.03463 12.162 6.97385 12.3266C6.91307 12.4912 6.82232 12.6401 6.70727 12.764C6.59222 12.8879 6.45536 12.984 6.30523 13.0464C6.1551 13.1089 5.99494 13.1362 5.83476 13.1268C5.67458 13.1174 5.51784 13.0714 5.37433 12.9917C5.23081 12.9121 5.10362 12.8004 5.00071 12.6637L0.469026 7.51588C0.262028 7.28053 0.143401 6.96668 0.137231 6.63808Z"/>
+  </symbol>
+</svg>
 
-        <p>Content</p>
+<header class="header-main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header-main__wrapper header-main__wrapper--primary">
+          <a href="/index.html" class="header-main__logo">
+            <img src="assets/img/dist/logo.svg" alt="" class="header-main__logo-img">
+          </a>
 
-        <img src="assets/img/dist/test.png" alt="image">
+          <div class="header-main__contacts">
+            <a href="tel:+79872179999" class="header-main__tel">+7 (987) 217-99-99</a>
+
+            <div class="--w-md-df-100"></div>
+
+            <input type="text" name="" id="header-main__search-input" class="header-main__search-input">
+
+            <address class="header-main__address"><img src="assets/img/dist/icon-1.svg" alt="" class="header-main__address-icon"> г. Казань, Ибрагимова 58</address>
+
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          
+        </div>
+
+        <div class="header-main__wrapper header-main__wrapper--secondary">
+          <nav class="header-main__nav">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="active">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#">
+                  Услуги
+                </a>
+
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="#">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="#">
+                      Услуги
+                    </a>
+
+                    <ul class="menu-list">
+                      <li class="menu-item">
+                        <a href="#">
+                          Услуги
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">
+                          Услуги
+                        </a>
+                      </li>
+                      <li class="menu-item menu-item-has-children">
+                        <a href="#">
+                          Услуги
+                        </a>
+
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="#">
+                              Услуги
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#">
+                              Услуги
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#" class="header-main__btn">Записаться онлайн</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <section class="section section-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-md-0">
+                <img src="assets/img/dist/main.jpg" alt="" class="section-main__img">
+              </div>
+
+              <div class="col-md-6">
+                <p class="section-main__subtext">
+                  Просто и без боли
+                </p>
+
+                <h1 class="h1 section-main__h1">
+                  Комплексное лечение зубов в <span>Mega Dent</span>
+                </h1>
+
+                <p class="section-main__subtitle">
+                  Терапия, гигиена, профилактика.<br>
+                  Все на вышем уровне
+                </p>
+
+                <ul class="tags__list">
+                  <li class="tags__item">Передовые технологии</li>
+                  <li class="tags__item">Профессиональные стоматологи</li>
+                  <li class="tags__item">Без боли и стресса</li>
+                  <li class="tags__item">Комплексное лечение</li>
+                </ul>
+
+                <div class="btn-wrap section-main__btn-wrap">
+                  <button class="btn btn--arrow section-main__btn">О наших услугах</button>
+                  <div class="slash"></div>
+                  <button class="btn btn--primary section-main__btn">Записаться онлайн</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-shares">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2 section-shares__h2">
+                  Акции
+                </h2>
+              </div>
+            </div>
+
+            <div class="row section-shares__row">
+              <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+                <a href="#">
+                  <h3 class="h3 section-shares__h3">
+                    Семейная скидка 20%
+                  </h3>
+                </a>
+
+                  <p class="section-shares__text">
+                    Алая вспышка осветила силуэт зазубренного крыла.
+                  </p>
+                <a href="#" class="--hover-overlay section-shares__img">
+                  <img src="assets/img/dist/main.jpg" alt="Megadent - Семейная скидка 20%" class="">
+                </a>
+
+                <a class="btn section-shares__btn">Подробнее</a>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+                <a href="#">
+                  <h3 class="h3 section-shares__h3">
+                    Семейная скидка 20%
+                  </h3>
+                </a>
+
+                  <p class="section-shares__text">
+                    Алая вспышка осветила силуэт зазубренного крыла.
+                  </p>
+                <a href="#" class="--hover-overlay section-shares__img">
+                  <img src="assets/img/dist/main.jpg" alt="Megadent - Семейная скидка 20%" class="">
+                </a>
+
+                <a class="btn section-shares__btn">Подробнее</a>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+                <a href="#">
+                  <h3 class="h3 section-shares__h3">
+                    Семейная скидка 20%
+                  </h3>
+                </a>
+
+                  <p class="section-shares__text">
+                    Алая вспышка осветила силуэт зазубренного крыла.
+                  </p>
+                <a href="#" class="--hover-overlay section-shares__img">
+                  <img src="assets/img/dist/main.jpg" alt="Megadent - Семейная скидка 20%" class="">
+                </a>
+
+                <a class="btn section-shares__btn">Подробнее</a>
+              </div>
+              <div class="col-md-3 col-sm-6 mb-5 mb-md-0">
+                <a href="#">
+                  <h3 class="h3 section-shares__h3">
+                    Семейная скидка 20%
+                  </h3>
+                </a>
+
+                  <p class="section-shares__text">
+                    Алая вспышка осветила силуэт зазубренного крыла.
+                  </p>
+                <a href="#" class="--hover-overlay section-shares__img">
+                  <img src="assets/img/dist/main.jpg" alt="Megadent - Семейная скидка 20%" class="">
+                </a>
+
+                <a class="btn section-shares__btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-help --bg">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2 section-help__h2">
+                  Как мы можем помочь
+                </h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="section-help__wrapper">
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-1.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-2.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-3.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-4.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-5.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-6.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-7.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="section-help__body">
+                    <p class="section-help__title">
+                      Терапия
+                    </p>
+
+                    <div class="section-help__body-wrap">
+                      <img src="assets/img/dist/help-8.svg" alt="" class="section-help__img">
+
+                      <ul class="section-help__list">
+                        <li class="section-help__item"><a href="#">Лечение зубов</a></li>
+                        <li class="section-help__item"><a href="#">Лечение десен</a></li>
+                        <li class="section-help__item"><a href="#">Удаление зубов</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-specialist">
+          <div class="container-fluid --container-right --gradient-right">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2 section-specialist__h2">
+                  Наши специалисты
+                </h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="section-specialist__slider">
+                    <div class="glide__track" data-glide-el="track">
+                        <div class="glide__slides">
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                          <div class="glide__slide">
+                            <a href="#" class="section-specialist__header">
+                              <p class="section-specialist__title">
+                                Главный врач
+                              </p>
+                              <p class="section-specialist__subtitle">
+                                8 лет практики
+                              </p>
+                            </a>
+
+                            <div class="section-specialist__card" style="background-image: url(assets/img/dist/specialist-1.jpg)">
+                              <div class="section-specialist__overlay">
+                                <button class="btn btn--light section-specialist__btn">О специалисте</button>
+                                <button class="btn btn--contrast section-specialist__btn">Записаться на приём</button>
+                              </div>
+                            </div>
+
+                            <a href="#" class="section-specialist__footer">
+                              <p class="section-specialist__name">
+                                Алина Рафиковна
+                              </p>
+                              <p class="section-specialist__patronymic">
+                                Файзрахманова
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="section-specialist__arrows" data-glide-el="controls">
+                        <button class="section-specialist__arrow section-specialist__arrow--left" data-glide-dir="<">
+                          <svg width="8" height="14">
+                            <use href="#specialist-arrow" fill="#5C9DFF"></use>
+                          </svg>
+                        </button>
+                        <button class="section-specialist__arrow section-specialist__arrow--right" data-glide-dir=">">
+                          <svg width="8" height="14">
+                            <use href="#specialist-arrow" fill="#5C9DFF"></use>
+                          </svg>
+                        </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-reviews --bg">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-auto">
+                <h2 class="h2 section-reviews__h2">
+                  Отзывы
+                </h2>
+              </div>
+
+              <div class="col-auto">
+                <button class="btn btn--primary section-reviews__btn-review">Оставить отзыв</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid --container-right --gradient-right --gradient-right--bg">
+            <div class="row">
+              <div class="col">
+                <div class="section-reviews__slider">
+                  <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                      <div class="glide__slide">
+                        <div class="section-reviews__body">
+                          <p class="section-reviews__title">
+                            Спасибо доктору
+                          </p>
+
+                          <p class="section-reviews__text">
+                            Уже не один год пользуюсь услугами стоматологии. В очередной раз убедилась что эта
+                            лучшая клиника ! Хочу выразить особую благодарность врачу- ортопеду, за профессионализм,
+                            чуткость, понимание , и отличную работу !!! Отдельное спасибо зубному технику, за
+                            красивые зубы)
+                          </p>
+
+                          <div class="section-reviews__wrap-bottom">
+                            <div class="section-reviews__info">
+                              <p class="section-reviews__name">
+                                Хемади Наталья
+                              </p>
+
+                              <a href="#" class="section-reviews__service">Услуги: <span>Имплантация зубов</span></a>
+                            </div>
+
+                            <a href="#" class="btn btn--transparent section-reviews__btn-body">
+                              Ссылка на отзыв ->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="glide__slide">
+                        <div class="section-reviews__body">
+                          <p class="section-reviews__title">
+                            Спасибо доктору
+                          </p>
+
+                          <p class="section-reviews__text">
+                            Уже не один год пользуюсь услугами стоматологии. В очередной раз убедилась что эта
+                            лучшая клиника ! Хочу выразить особую благодарность врачу- ортопеду, за профессионализм,
+                            чуткость, понимание , и отличную работу !!! Отдельное спасибо зубному технику, за
+                            красивые зубы)
+                          </p>
+
+                          <div class="section-reviews__wrap-bottom">
+                            <div class="section-reviews__info">
+                              <p class="section-reviews__name">
+                                Хемади Наталья
+                              </p>
+
+                              <a href="#" class="section-reviews__service">Услуги: <span>Имплантация зубов</span></a>
+                            </div>
+
+                            <a href="#" class="btn btn--transparent section-reviews__btn-body">
+                              Ссылка на отзыв ->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="glide__slide">
+                        <div class="section-reviews__body">
+                          <p class="section-reviews__title">
+                            Спасибо доктору
+                          </p>
+
+                          <p class="section-reviews__text">
+                            Уже не один год пользуюсь услугами стоматологии. В очередной раз убедилась что эта
+                            лучшая клиника ! Хочу выразить особую благодарность врачу- ортопеду, за профессионализм,
+                            чуткость, понимание , и отличную работу !!! Отдельное спасибо зубному технику, за
+                            красивые зубы)
+                          </p>
+
+                          <div class="section-reviews__wrap-bottom">
+                            <div class="section-reviews__info">
+                              <p class="section-reviews__name">
+                                Хемади Наталья
+                              </p>
+
+                              <a href="#" class="section-reviews__service">Услуги: <span>Имплантация зубов</span></a>
+                            </div>
+
+                            <a href="#" class="btn btn--transparent section-reviews__btn-body">
+                              Ссылка на отзыв ->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="glide__slide">
+                        <div class="section-reviews__body">
+                          <p class="section-reviews__title">
+                            Спасибо доктору
+                          </p>
+
+                          <p class="section-reviews__text">
+                            Уже не один год пользуюсь услугами стоматологии. В очередной раз убедилась что эта
+                            лучшая клиника ! Хочу выразить особую благодарность врачу- ортопеду, за профессионализм,
+                            чуткость, понимание , и отличную работу !!! Отдельное спасибо зубному технику, за
+                            красивые зубы)
+                          </p>
+
+                          <div class="section-reviews__wrap-bottom">
+                            <div class="section-reviews__info">
+                              <p class="section-reviews__name">
+                                Хемади Наталья
+                              </p>
+
+                              <a href="#" class="section-reviews__service">Услуги: <span>Имплантация зубов</span></a>
+                            </div>
+
+                            <a href="#" class="btn btn--transparent section-reviews__btn-body">
+                              Ссылка на отзыв ->
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-reviews__arrows" data-glide-el="controls">
+                    <button class="section-reviews__arrow section-reviews__arrow--left" data-glide-dir="<">
+                      <svg width="8" height="14">
+                        <use href="#specialist-arrow" fill="#5C9DFF"></use>
+                      </svg>
+                    </button>
+                    <button class="section-reviews__arrow section-reviews__arrow--right" data-glide-dir=">">
+                      <svg width="8" height="14">
+                        <use href="#specialist-arrow" fill="#5C9DFF"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="--text-center">
+                  <a href="#" class="btn section-reviews__btn">
+                    Смотреть еще
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-about">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2 section-about__h2">
+                  О клинике
+                </h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <ul class="tags__list section-about__list">
+                  <li class="tags__item section-about__item active">Передовые технологии</li>
+                  <li class="tags__item section-about__item">Профессиональные стоматологи</li>
+                  <li class="tags__item section-about__item">Без боли и стресса</li>
+                  <li class="tags__item section-about__item">Комплексное лечение</li>
+                </ul>
+
+                <div class="section-about__toggle-list">
+                  <div class="section-about__wrap-toggle active">
+                    <p class="section-about__toggle-text">
+                      Кстати 1, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                    <p class="section-about__toggle-text">
+                      Кстати 1, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                  </div>
+
+                  <div class="section-about__wrap-toggle">
+                    <p class="section-about__toggle-text">
+                      Кстати 2, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                    <p class="section-about__toggle-text">
+                      Кстати 2, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                  </div>
+
+                  <div class="section-about__wrap-toggle">
+                    <p class="section-about__toggle-text">
+                      Кстати 3, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                    <p class="section-about__toggle-text">
+                      Кстати 3, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                  </div>
+
+                  <div class="section-about__wrap-toggle">
+                    <p class="section-about__toggle-text">
+                      Кстати 4, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                    <p class="section-about__toggle-text">
+                      Кстати 4, интерактивные прототипы являются только методом политического участия и представлены в
+                      исключительно положительном свете.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-md-0 mb-5">
+                <div class="section-about__wrap-img">
+                  <img src="assets/img/dist/about.jpg" alt="Мега Дент - это надежно" class="section-about__img">
+                  <img src="assets/img/dist/about-logo.svg" alt="" class="section-about__logo">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h3 class="h3 section-about__h3">
+                  Мега Дент - это надежно
+                </h3>
+                <p class="section-about__text">
+                  Представителей целевой аудитории является четким доказательством простого факта: сплочённость команды
+                  профессионалов играет определяющее значение для позиций, занимаемых участниками в отношении
+                  поставленных задач. С другой стороны, высококачественный прототип будущего проекта обеспечивает
+                  актуальность существующих финансовых и административных условий.
+                </p>
+                <a href="#" class="section-about__next">
+                  Узнать больше ->
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
         
         <h2>Footer</h2>
     </body>
 
+    <script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/glide/dist/glide.min.js"></script>
     <script src="assets/js/common.js"></script>
 </html>
