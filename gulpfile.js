@@ -63,9 +63,9 @@ function scripts() {
 
 function images() {
   return src('src/assets/img/src/**/*')
-    .pipe(changed('src/assets/img/dist/'))
+    .pipe(changed('src/assets/img/dist'))
     .pipe(imagemin())
-    .pipe(dest('src/assets/img/dist/'))
+    .pipe(dest('src/assets/img/dist'))
 }
 
 function styles() {
@@ -75,7 +75,7 @@ function styles() {
     .pipe(sass.sync())
     .pipe(concat('style.css'))
     .pipe(autoprefixer())
-    .pipe(dest('src/assets'))
+    .pipe(dest('src'))
     .pipe(stream())
 }
 

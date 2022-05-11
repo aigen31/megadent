@@ -1,1 +1,15 @@
-$default-font: Roboto
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1050px,
+  xxl: 1140px
+) !default;
+
+$link-color: #5C9DFF;
+
+$default-font: "Manrope";
+
+.--w-md-df-100 {
+  width: 100%;
+}
