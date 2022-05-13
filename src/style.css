@@ -6610,6 +6610,69 @@ img {
   flex-wrap: wrap;
 }
 
+.dropdown {
+  list-style-type: none;
+  margin: 0 0 0 1.95rem;
+  padding: 0;
+}
+.dropdown__current {
+  position: relative;
+}
+.dropdown__current:hover .dropdown__list {
+  display: block;
+}
+.dropdown__text {
+  margin: 0;
+  padding: 5px 37px 7px 16px;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+  background-color: #e3eeff;
+  border-radius: 9px;
+  cursor: default;
+  color: #5c9dff;
+  position: relative;
+}
+.dropdown__text::after {
+  content: "";
+  display: block;
+  background-image: url(assets/img/dist/dropdown-arrow.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  position: absolute;
+}
+.dropdown__list {
+  padding: 0.6rem 1.125rem 0.9rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 14px;
+  background-color: #fff;
+  border: 1px #D8D8D8 solid;
+  list-style-type: none;
+  margin: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.dropdown__item {
+  font-weight: 600;
+}
+.dropdown__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.dropdown__item a {
+  color: var(--text);
+}
+.dropdown__item a:hover {
+  color: #5c9dff;
+}
+
 .slash {
   width: 23px;
   height: 21px;
@@ -6733,7 +6796,7 @@ img {
 .header-main__nav > .menu-list {
   margin: 0 -15px;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 .header-main__nav > .menu-list .menu-list {
   padding: 0.6rem 1.125rem 0.9rem;
@@ -7085,7 +7148,37 @@ img {
   font-weight: 800;
 }
 
-.section-specialist__card {
+.specialist__header:hover {
+  opacity: 0.68;
+}
+.specialist__footer {
+  color: #000;
+}
+.specialist__title {
+  color: #5c9dff;
+  font-weight: bold;
+  letter-spacing: -0.04rem;
+  margin: 0;
+  font-size: 1.35rem;
+}
+.specialist__subtitle {
+  color: #999;
+  letter-spacing: -0.04rem;
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+.specialist__name {
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 1.35rem;
+}
+.specialist__patronymic {
+  font-weight: 300;
+  font-size: 1.35rem;
+  margin: 0;
+}
+.specialist__card {
   border-radius: 15.5px;
   overflow: hidden;
   border: 4.5px solid #BFD7FF;
@@ -7093,20 +7186,10 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.section-specialist__card:hover .section-specialist__overlay {
+.specialist__card:hover .specialist__overlay {
   opacity: 1;
 }
-.section-specialist__h2 {
-  margin-bottom: 4.6vh;
-}
-.section-specialist__btn {
-  font-size: 0.9rem;
-  width: 100%;
-}
-.section-specialist__btn:first-child {
-  margin-bottom: 5px;
-}
-.section-specialist__overlay {
+.specialist__overlay {
   height: 350px;
   opacity: 0;
   text-align: center;
@@ -7118,35 +7201,16 @@ img {
   flex-direction: column;
   transition: opacity 0.3s ease;
 }
-.section-specialist__title {
-  color: #5c9dff;
-  font-weight: bold;
-  letter-spacing: -0.04rem;
-  margin: 0;
-  font-size: 1.35rem;
+.specialist__btn {
+  font-size: 0.9rem;
+  width: 100%;
 }
-.section-specialist__subtitle {
-  color: #999;
-  letter-spacing: -0.04rem;
-  font-size: 1.35rem;
-  margin-bottom: 14px;
+.specialist__btn:first-child {
+  margin-bottom: 5px;
 }
-.section-specialist__name {
-  font-weight: bold;
-  margin-top: 16px;
-  margin-bottom: 0;
-  font-size: 1.35rem;
-}
-.section-specialist__patronymic {
-  font-weight: 300;
-  font-size: 1.35rem;
-  margin: 0;
-}
-.section-specialist__header:hover {
-  opacity: 0.68;
-}
-.section-specialist__footer {
-  color: #000;
+
+.section-specialist__h2 {
+  margin-bottom: 4.6vh;
 }
 .section-specialist__arrow, .section-reviews__arrow {
   position: absolute;
@@ -7428,7 +7492,15 @@ img {
 }
 
 .section-category__h1 {
+  margin-bottom: 0;
+}
+.section-category__specialist {
+  margin-bottom: 7.4vh;
+}
+.section-category__head {
   margin-bottom: 4.6vh;
+  display: flex;
+  align-items: center;
 }
 .section-category__card {
   border-radius: 12px 12px 17px 17px;
