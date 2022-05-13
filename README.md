@@ -1,5 +1,5 @@
 Вёрстка МегаДент
 ================
 
-[Главная страница](/dist/index.html)
-[Категория](/dist/category.html)
+1. [Главная страница](/dist/index.html)
+2. [Категория](/dist/category.html)
