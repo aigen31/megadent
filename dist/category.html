@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/libs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="specialist-arrow">
+    <path
+      d="M0.137231 6.63808C0.135307 6.46781 0.163688 6.29883 0.220746 6.14085C0.277805 5.98286 0.362417 5.83896 0.469733 5.71741L5.10161 0.513762C5.20957 0.392467 5.33804 0.29599 5.47967 0.229839C5.62129 0.163688 5.77331 0.129158 5.92704 0.128222C6.08077 0.127286 6.23319 0.159962 6.37562 0.224383C6.51804 0.288805 6.64767 0.38371 6.75711 0.503681C6.86654 0.623652 6.95364 0.76634 7.01343 0.923597C7.07322 1.08085 7.10453 1.2496 7.10557 1.4202C7.10661 1.5908 7.07736 1.75992 7.01949 1.91789C6.96162 2.07586 6.87626 2.2196 6.7683 2.3409L2.93526 6.62104L6.66866 10.868C6.78863 10.9863 6.88536 11.1308 6.95278 11.2924C7.02021 11.454 7.05688 11.6292 7.0605 11.8072C7.06413 11.9852 7.03463 12.162 6.97385 12.3266C6.91307 12.4912 6.82232 12.6401 6.70727 12.764C6.59222 12.8879 6.45536 12.984 6.30523 13.0464C6.1551 13.1089 5.99494 13.1362 5.83476 13.1268C5.67458 13.1174 5.51784 13.0714 5.37433 12.9917C5.23081 12.9121 5.10362 12.8004 5.00071 12.6637L0.469026 7.51588C0.262028 7.28053 0.143401 6.96668 0.137231 6.63808Z"/>
+  </symbol>
+
+  <symbol id="whatsapp">
+    <path
+      d="M22.1058 3.77812C19.6741 1.34062 16.4357 0 12.9942 0C5.89062 0 0.110268 5.78036 0.110268 12.8839C0.110268 15.1531 0.702232 17.3701 1.82812 19.3259L0 26L6.8308 24.2067C8.71116 25.2339 10.8295 25.7737 12.9884 25.7737H12.9942C20.092 25.7737 26 19.9933 26 12.8897C26 9.44821 24.5375 6.21562 22.1058 3.77812ZM12.9942 23.6031C11.0674 23.6031 9.18125 23.0866 7.53884 22.1116L7.15 21.8795L3.09911 22.9415L4.17857 18.9893L3.92321 18.583C2.84955 16.8768 2.28661 14.9094 2.28661 12.8839C2.28661 6.9817 7.09196 2.17634 13 2.17634C15.8612 2.17634 18.5482 3.29062 20.5679 5.31607C22.5875 7.34152 23.8295 10.0286 23.8237 12.8897C23.8237 18.7978 18.8964 23.6031 12.9942 23.6031ZM18.8674 15.5826C18.5482 15.4201 16.9638 14.6424 16.6679 14.5379C16.3719 14.4277 16.1571 14.3754 15.9424 14.7004C15.7277 15.0254 15.1125 15.7451 14.921 15.9656C14.7353 16.1804 14.5437 16.2094 14.2246 16.0469C12.3326 15.1009 11.0906 14.358 9.84286 12.2165C9.51205 11.6478 10.1737 11.6884 10.7888 10.458C10.8933 10.2433 10.8411 10.0576 10.7598 9.89509C10.6786 9.73259 10.0344 8.14821 9.76741 7.50402C9.50625 6.87723 9.23929 6.96429 9.04196 6.95268C8.85625 6.94107 8.64152 6.94107 8.42679 6.94107C8.21205 6.94107 7.86384 7.02232 7.56786 7.34152C7.27187 7.66652 6.44196 8.4442 6.44196 10.0286C6.44196 11.6129 7.59688 13.1451 7.75357 13.3598C7.91607 13.5746 10.0228 16.8246 13.2554 18.2232C15.2982 19.1054 16.0991 19.1808 17.1205 19.0299C17.7415 18.9371 19.0241 18.2522 19.2911 17.4978C19.558 16.7433 19.558 16.0991 19.4768 15.9656C19.4013 15.8205 19.1866 15.7393 18.8674 15.5826Z"/>
+  </symbol>
+</svg>
+
+<header class="header-main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header-main__wrapper header-main__wrapper--primary">
+          <a href="/index.html" class="header-main__logo">
+            <img src="assets/img/dist/logo.svg" alt="" class="header-main__logo-img">
+          </a>
+
+          <div class="header-main__contacts">
+            <a href="tel:+79872179999" class="header-main__tel">+7 (987) 217-99-99</a>
+
+            <div class="--w-md-df-100"></div>
+
+            <input type="text" name="" id="header-main__search-input" class="header-main__search-input">
+
+            <address class="header-main__address"><img src="assets/img/dist/icon-1.svg" alt="" class="header-main__address-icon"> г. Казань, Ибрагимова 58</address>
+
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          
+        </div>
+
+        <div class="header-main__wrapper header-main__wrapper--secondary">
+          <nav class="header-main__nav">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="active">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#">
+                  Услуги
+                </a>
+
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="#">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="#">
+                      Услуги
+                    </a>
+
+                    <ul class="menu-list">
+                      <li class="menu-item">
+                        <a href="#">
+                          Услуги
+                        </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="#">
+                          Услуги
+                        </a>
+                      </li>
+                      <li class="menu-item menu-item-has-children">
+                        <a href="#">
+                          Услуги
+                        </a>
+
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="#">
+                              Услуги
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="#">
+                              Услуги
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#" class="header-main__btn">Записаться онлайн</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section section-category">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="kama_breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span
+            itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href=""
+              itemprop="item" data-wpel-link="internal"><span itemprop="name">Главная</span></a></span><span
+            class="kb_sep"> / </span>
+          <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+              href="#" itemprop="item" data-wpel-link="internal"><span
+                itemprop="name">Услуги</span></a></span><span class="kb_sep"> / </span>
+          <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a
+              href="#" itemprop="item" data-wpel-link="internal"><span
+                itemprop="name">Лечение зубов</span></a></span><span class="kb_sep">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h1 class="h1 section-category__h1">
+          Лечение зубов
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="section-category__card">
+          <img src="assets/img/dist/main.jpg" alt="Заголовок" class="section-category__img">
+
+          <div class="section-category__body">
+            <p class="section-category__title">
+              Лечение кариеса зубов
+            </p>
+
+            <p class="section-category__text">
+              Алая вспышка осветила силуэт зазубренного крыла.
+            </p>
+
+            <a class="btn section-category__btn">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-content --bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h2>
+          Важный заголовок
+        </h2>
+
+        <p>
+          Учитывая ключевые сценарии поведения, высокотехнологичная концепция общественного уклада создаёт необходимость
+          включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса системы массового
+          участия. Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования
+          подвергнуты целой серии независимых исследований. Внезапно, диаграммы связей, превозмогая сложившуюся
+          непростую экономическую ситуацию, рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+        </p>
+
+        <p>
+          Учитывая ключевые сценарии поведения, высокотехнологичная концепция общественного уклада создаёт необходимость
+          включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса системы массового
+          участия. Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования
+          подвергнуты целой серии независимых исследований. Внезапно, диаграммы связей, превозмогая сложившуюся
+          непростую экономическую ситуацию, рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-callback">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="section-callback__wrapper">
+          <form action="callback.php" class="section-callback__form">
+            <h2 class="h2 section-callback__h2">
+              Хотите, мы вам перезвоним?
+            </h2>
+            <p class="section-callback__subtitle">
+              Оставьте заявку и мы подробно ответим
+              на все Ваши вопросы!
+            </p>
+
+            <input type="text" class="input section-callback__input" placeholder="Как вас зовут?">
+
+            <input type="text" class="input section-callback__input" placeholder="Ваш номер телефона">
+
+            <div class="section-callback__bottom">
+              <button class="btn section-callback__btn">Обратный звонок</button>
+
+              <p class="section-callback__accept">
+                Нажимая на кнопку, вы даете согласие
+                на <a href="#">обработку своих персональных данных</a>
+              </p>
+            </div>
+          </form>
+
+          <img src="assets/img/dist/logo-callback.svg" alt="" class="section-callback__img">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-auto">
+        <a href="#">
+          <img src="assets/img/dist/logo-vertical.svg" alt="" class="footer__logo">
+        </a>
+      </div>
+
+      <div class="col-md-auto mb-md-0 my-5">
+        <div class="footer__head">
+          <h2 class="h2 footer__h2">
+            Навигация
+          </h2>
+
+          <div class="footer__arrow">
+            ->
+          </div>
+        </div>
+
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#">О клинике</a></li>
+          <li class="footer__item"><a href="#">Врачи</a></li>
+          <li class="footer__item"><a href="#">Вопросы и ответы</a></li>
+          <li class="footer__item"><a href="#">Отзывы</a></li>
+          <li class="footer__item"><a href="#">Акции</a></li>
+          <li class="footer__item"><a href="#">Лицензии</a></li>
+        </ul>
+
+        <a href="+79872179999" class="footer__tel">+7 (987) 217-99-99</a>
+
+        <div class="footer__bottom">
+          <button class="btn btn--scroll-up" id="scroll-up">Наверх</button>
+
+          <a href="mailto:megadent@yandex.ru" class="btn footer__btn">megadent@yandex.ru</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <p class="footer__title">
+          НЕОБХОДИМА КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА
+        </p>
+
+        <p class="footer__text">
+          Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при
+          каких условиях не является публичной офертой. Для получения подробной информации о стоимости, наименовании и
+          сроках оказания услуг, пожалуйста, обращайтесь по контактным телефонам. Конкретный перечень услуг и порядок их
+          предоставления определяется в договоре оказания услуг, оформляемым между клиникой и пациентом.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bg">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer__wrap">
+            <p class="copyright">
+              © MEGA DENT 2022
+            </p>
+
+            <a href="#" class="privacy">
+              Политика конфиденциальности | Политика обработки персональных данных
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script src="assets/libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="assets/libs/glide/dist/glide.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+</html>
