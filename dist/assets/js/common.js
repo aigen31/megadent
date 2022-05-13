@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   let hamburger = document.querySelector('.hamburger'),
-      menu = document.querySelector('.header-main__wrapper--secondary');
+      menu = document.querySelector('.header-main__wrapper--secondary'),
+      scrollUp = document.querySelector('#scroll-up');
 
   hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('is-active');
@@ -30,6 +31,12 @@ window.addEventListener('DOMContentLoaded', () => {
         after: 30,
       }
     }
+  })
+
+  scrollUp.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0
+    });
   })
 
   specialistSlider.mount();
