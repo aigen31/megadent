@@ -7,31 +7,35 @@ window.addEventListener('DOMContentLoaded', () => {
     hamburger.classList.toggle('is-active');
     menu.classList.toggle('active');
   })
-
-  let specialistSlider = new Glide('.section-specialist__slider', {
-    perView: 5,
-    breakpoints: {
-      992: {
-        perView: 4,
-        peek: {
+  
+  if (document.querySelector('.section-specialist__slider')) {
+    let specialistSlider = new Glide('.section-specialist__slider', {
+      perView: 5,
+      breakpoints: {
+        992: {
+          perView: 4,
+          peek: {
+            before: 0,
+            after: 100,
+          }
+        },
+        768: {
+          perView: 3,
+          peek: {
+            before: 0,
+            after: 50,
+          }
+        },
+        576: {
+          perView: 1,
           before: 0,
-          after: 100,
+          after: 30,
         }
-      },
-      768: {
-        perView: 3,
-        peek: {
-          before: 0,
-          after: 50,
-        }
-      },
-      576: {
-        perView: 1,
-        before: 0,
-        after: 30,
       }
-    }
-  })
+    })
+
+    specialistSlider.mount();
+  }
 
   scrollUp.addEventListener('click', () => {
     window.scrollTo({
@@ -39,27 +43,27 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })
 
-  specialistSlider.mount();
-
-  let reviewsSlider = new Glide('.section-reviews__slider', {
-    perView: 3,
-    breakpoints: {
-      768: {
-        perView: 2,
-        peek: {
+  if (document.querySelector('.section-reviews__slider')) {
+    let reviewsSlider = new Glide('.section-reviews__slider', {
+      perView: 3,
+      breakpoints: {
+        768: {
+          perView: 2,
+          peek: {
+            before: 0,
+            after: 50,
+          }
+        },
+        576: {
+          perView: 1,
           before: 0,
-          after: 50,
+          after: 30,
         }
-      },
-      576: {
-        perView: 1,
-        before: 0,
-        after: 30,
       }
-    }
-  })
+    })
 
-  reviewsSlider.mount();
+    reviewsSlider.mount();
+  }
 })
 
 $(function () {
